@@ -13,7 +13,7 @@
   --primary: #3b4550;
   --primary-dark: #0a3d66;
   --primary-hover: #0d5ba8;
-  --primary-light: #09f;
+  --primary-light: rgb(0, 140, 255);
   --background: #06182a;
   --text-primary: #ffffff;
   --text-secondary: #cbd5e1;
@@ -282,8 +282,14 @@ main > section:nth-child(2) > div > div:first-child > p {
 /* Grid de Features */
 main > section:nth-child(2) footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 16px
+}
+
+@media (width >= 640px) {
+  main > section:nth-child(2) footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* Feature Cards */
@@ -347,6 +353,7 @@ article {
 
   h3{ 
     font-weight: 500;
-  }
+   
+    
 }
 
