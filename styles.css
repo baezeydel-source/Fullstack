@@ -16,7 +16,7 @@
   --primary-light: rgb(0, 140, 255);
   --background: #06182a;
   --text-primary: #ffffff;
-  --text-secondary: #cbd5e1;
+  --text-secondary: #156cc2;
   --text-muted: #94a3b8;
   --border: rgba(255, 255, 255, 0.1);
   --card-bg: #23273d;
@@ -82,17 +82,28 @@ h1 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  
 
   svg {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     color: var(--primary-light);
+
+  }
+
+  p {
+    font-size: 1rem;
+    background-color: var(--text-secondary);
+    color: var(--text-secondary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
   }
 }
 
 h1 + p {
   text-wrap: balance;
-  margin-bottom: 2rem
+  margin-bottom: 1rem
+
 }
 
 /* Header */
@@ -109,6 +120,15 @@ header {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      color: var(--primary-light);
+    }
   }
 }
 
@@ -167,6 +187,29 @@ main > section:nth-child(1) {
     right: 0;
     mask-image: linear-gradient(to bottom, rgba(16, 25, 34, 1) 5%, rgba(16, 25, 34, 0) 80%);
   }
+
+  p {
+    max-width: 42rem;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    color: var(--text-muted);
+  }
+
+  jobs search {
+    max-width: 42rem;
+    margin: 6rem auto 0 auto;
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    padding: 0.5rem;
+  }
+
+  filters {
+    max-width: 42rem;
+    margin: 6rem;
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    padding: .5rem;
+  }
 }
 
 /* Formulario de Búsqueda */
@@ -208,6 +251,22 @@ form input[type="text"] {
 
 form input[type="text"]::placeholder {
   color: #64748b;
+}
+
+form > div.filters {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+form > div.filters select {
+  background-color: white;
+  color: #0f172a;
+  border: 1px solid var(--border);
+  padding: 0.75rem 0.5rem;
+  font: inherit;
 }
 
 button {
@@ -353,7 +412,6 @@ article {
 
   h3{ 
     font-weight: 500;
-   
-    
+  }
 }
 

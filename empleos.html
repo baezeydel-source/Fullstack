@@ -11,19 +11,53 @@
 
 <body>
     <header>
-        <h2>DevJobs</h2>
+        <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>DevJobs
+            
         <nav>
            <a href="https://utebooks-web.vercel.app" target="_blank" rel="noopener noreferrer">Inicio</a>
            <a href="empleos.html">Empleos</a>
         </nav>
         <div>
             <a href="">Publicar un empleo</a>
-            <a href="">Iniciar sesión</a>
+        
         </div>
         <link rel="stylesheet" href="./styles.css" />
     </header>
 
     <main>
+        <section class="jobs search">
+            <h1>Encuentra tu proximo trabajo</h1>
+            <p>Explora nuestras oportunidades de empleo y encuentra el trabajo perfecto para ti.</p>
+            <form role="search">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    <input required type="text" placeholder="Buscar un empleo"/>
+                    
+                    
+                </div>
+                <div class="filters">
+                    <select name ="category">
+                        <option value="">Python</option>
+                        <option value="full-time">React</option>
+                        <option value="part-time">MongoDB</option>
+                        <option value="remote">HTML/CSS</option>
+                    </select>
+                
+                    <select name="level">
+                                <option value="">Todos los niveles</option>
+                                <option value="junior">Junior</option>
+                                <option value="mid-level">Mid Level</option>
+                                <option value="senior">Senior</option>
+                            </select>
+                        <select name="location">
+                                <option value="">Todas las ubicaciones</option>
+                                <option value="remote">Remoto</option>
+                                <option value="onsite">Presencial</option>
+                            </select>
+                        </div>
+            </form>
+        </section>
+
         </main> 
     
         
