@@ -210,6 +210,8 @@ main > section:nth-child(1) {
     color: var(--text-muted);
     padding: .5rem;
   }
+
+  
 }
 
 /* Formulario de Búsqueda */
@@ -414,4 +416,26 @@ article {
     font-weight: 500;
   }
 }
+
+.jobs-list {
+    max-width: 100rem;
+    margin: 6rem;
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    padding: .5rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+  }
 
