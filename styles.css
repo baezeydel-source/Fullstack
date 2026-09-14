@@ -149,6 +149,7 @@ nav {
       outline: none;
     }
   }
+
 }
 
 /* Botones del Header */
@@ -423,12 +424,15 @@ article {
     font-size: 1.125rem;
     color: var(--text-muted);
     padding: .5rem;
+   
 
     h2 {
       font-size: 2rem;
       font-weight: 700;
       color: var(--text-primary);
       margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
     }
 
     h3 {
@@ -438,4 +442,41 @@ article {
       margin-bottom: 1rem;
     }
   }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 2rem;
+    
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.3rem;
+      transition: all .3s;
+      text-decoration: none;
+      color: var(--text-muted);
+
+      &:hover, &:focus {
+        background-color: #fff;
+      }
+
+      &active {
+        transform: scale(1.1);
+      }
+
+        &.is-active {
+          background-color: var(--text-secondary);
+          color: white;
+          pointer-events: none;
+        }
+       
+      }
+    }
+  }
+ 
 
