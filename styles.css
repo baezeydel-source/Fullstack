@@ -416,6 +416,13 @@ article {
   h3{ 
     font-weight: 500;
   }
+
+  .button-apply-job {
+    &.is-applied {
+      background: #4caf50;
+      pointer-events: none;
+    }
+  }
 }
 
 .jobs-list {
